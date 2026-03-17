@@ -92,7 +92,7 @@ export function SessionsPage() {
 
       <div className="grid gap-4 md:grid-cols-3">
         {sessions.map((session) => (
-          <Card key={session.id} className="bg-gradient-to-br from-white to-slate-50">
+          <Card key={session.id} className="bg-linear-to-br from-white to-slate-50">
             <div className="flex items-center justify-between">
               <Badge>{session.status}</Badge>
               <Badge>{session.qr}</Badge>

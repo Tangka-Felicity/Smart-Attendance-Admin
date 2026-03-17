@@ -19,7 +19,7 @@ export function ProfilePage() {
       <section className="grid gap-6 xl:grid-cols-[0.8fr_1.2fr]">
         <Card>
           <div className="flex flex-col items-center text-center">
-            <div className="flex size-24 items-center justify-center rounded-[2rem] bg-gradient-to-br from-brand-primary to-brand-accent text-2xl font-semibold text-white">
+            <div className="flex size-24 items-center justify-center rounded-4xl bg-linear-to-br from-brand-primary to-brand-accent text-2xl font-semibold text-white">
               MR
             </div>
             <h2 className="mt-5 text-xl font-semibold text-brand-text">Mia Reynolds</h2>

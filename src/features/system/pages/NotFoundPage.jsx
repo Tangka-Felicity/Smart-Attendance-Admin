@@ -8,7 +8,7 @@ export function NotFoundPage() {
   return (
     <div className="page-shell flex min-h-screen items-center justify-center">
       <Card className="max-w-xl text-center">
-        <div className="mx-auto flex size-16 items-center justify-center rounded-[1.5rem] bg-blue-50">
+        <div className="mx-auto flex size-16 items-center justify-center rounded-3xl bg-blue-50">
           <Compass className="size-7 text-brand-primary" />
         </div>
         <h1 className="mt-6 text-headline">Page not found</h1>

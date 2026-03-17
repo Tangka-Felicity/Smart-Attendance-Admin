@@ -10,7 +10,7 @@ export function AppProviders({ children }) {
         closeButton
         toastOptions={{
           classNames: {
-            toast: '!rounded-2xl !border !shadow-panel',
+            toast: 'rounded-2xl! border! shadow-panel!',
           },
         }}
       />

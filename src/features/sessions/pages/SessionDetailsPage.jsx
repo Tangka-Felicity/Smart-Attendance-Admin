@@ -35,7 +35,7 @@ export function SessionDetailsPage() {
             <Badge tone="success">{session.status}</Badge>
           </div>
           <div className="mt-8 flex justify-center">
-            <div className="flex size-64 items-center justify-center rounded-[2rem] border border-white/10 bg-white/5">
+            <div className="flex size-64 items-center justify-center rounded-4xl border border-white/10 bg-white/5">
               <QrCode className="size-24 text-cyan-300" />
             </div>
           </div>

@@ -47,7 +47,7 @@ export function DashboardPage() {
                 </div>
                 <div className="h-3 rounded-full bg-slate-100">
                   <div
-                    className="h-3 rounded-full bg-gradient-to-r from-brand-primary to-brand-accent"
+                    className="h-3 rounded-full bg-linear-to-r from-brand-primary to-brand-accent"
                     style={{ width: `${value}%` }}
                   />
                 </div>

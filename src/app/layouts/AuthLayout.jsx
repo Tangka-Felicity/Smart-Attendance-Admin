@@ -8,7 +8,7 @@ export function AuthLayout() {
       <div className="page-shell flex min-h-screen items-center">
         <div className="grid w-full gap-6 lg:grid-cols-[1.1fr_0.9fr]">
           <section className="panel relative hidden overflow-hidden p-10 lg:block">
-            <div className="absolute inset-0 bg-grid bg-[size:24px_24px] opacity-60" />
+            <div className="absolute inset-0 bg-grid bg-size-[24px_24px] opacity-60" />
             <div className="relative flex h-full flex-col justify-between">
               <AppLogo />
               <div className="max-w-xl">

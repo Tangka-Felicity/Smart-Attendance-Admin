@@ -19,7 +19,7 @@ export function Topbar() {
             <p className="text-sm font-semibold text-brand-text">Northwind Academy</p>
           </div>
           <Link to="/app/profile" className="flex items-center gap-3 rounded-2xl border bg-white px-4 py-2.5">
-            <div className="flex size-10 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-primary to-brand-accent font-semibold text-white">
+            <div className="flex size-10 items-center justify-center rounded-2xl bg-linear-to-br from-brand-primary to-brand-accent font-semibold text-white">
               MR
             </div>
             <div className="hidden text-left sm:block">

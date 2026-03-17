@@ -45,7 +45,7 @@ export function ReportsPage() {
                 </div>
                 <div className="mt-2 h-3 rounded-full bg-slate-100">
                   <div
-                    className="h-3 rounded-full bg-gradient-to-r from-brand-primary to-brand-accent"
+                    className="h-3 rounded-full bg-linear-to-r from-brand-primary to-brand-accent"
                     style={{ width: `${value}%` }}
                   />
                 </div>
