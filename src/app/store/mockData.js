@@ -77,7 +77,7 @@ export const initialUsers = [
     departmentId: null,
     firstName: 'Mia',
     lastName: 'Reynolds',
-    email: 'mia.reynolds@smartattendance.test',
+    email: 'mia.reynolds@rollog.test',
     phone: '+1 (555) 010-2200',
     role: 'super_admin',
     employeeCode: 'SA-001',

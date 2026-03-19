@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 195.68 86.39">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #231f20;
+        font-family: Nasalization-Regular, Nasalization;
+        font-size: 49.19px;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #4366b0;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-3 {
+        fill: #4366b0;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <g>
+        <text class="cls-1" transform="translate(12.57 57.43)"><tspan x="0" y="0">ro</tspan></text>
+        <g>
+          <polygon class="cls-3" points="90.38 47.4 82.41 55.38 58.02 24.02 64.12 18.79 83.27 44.05 85.81 41.52 90.38 47.4"/>
+          <polygon class="cls-3" points="117.46 37.96 100.04 55.38 92.32 45.46 87.75 39.57 75.65 24.02 81.75 18.79 93.3 34.03 97.81 39.97 100.9 44.05 112.23 32.73 117.46 37.96"/>
+        </g>
+        <text class="cls-1" transform="translate(116.04 56.74)"><tspan x="0" y="0">og</tspan></text>
+      </g>
+      <polyline class="cls-2" points="17.26 1.5 1.76 1.5 1.76 15.11"/>
+      <polyline class="cls-2" points="1.5 69.39 1.5 84.89 15.11 84.89"/>
+      <polyline class="cls-2" points="178.55 84.62 194.04 84.62 194.04 71.01"/>
+      <polyline class="cls-2" points="194.18 17.05 194.18 1.55 180.58 1.55"/>
+    </g>
+  </g>
+</svg>

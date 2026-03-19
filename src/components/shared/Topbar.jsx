@@ -11,6 +11,7 @@ import {
   getCurrentUser,
 } from '../../app/store/selectors'
 import { cn } from '../../lib/utils'
+import { AppLogo } from './AppLogo'
 import { Button } from '../ui/button'
 import { Input } from '../ui/input'
 import { Badge } from '../ui/badge'
@@ -38,9 +39,14 @@ export function Topbar() {
   return (
     <header className="sticky top-0 z-20 mb-6 border-b border-white/70 bg-brand-bg/90 backdrop-blur">
       <div className="flex flex-col gap-4 py-4 xl:flex-row xl:items-center">
-        <div className="relative hidden max-w-md flex-1 md:block">
-          <Search className="pointer-events-none absolute left-4 top-1/2 size-4 -translate-y-1/2 text-slate-400" />
-          <Input className="bg-white pl-10" placeholder="Search current workspace context" />
+        <div className="flex min-w-0 flex-1 items-center gap-4">
+          <Link to="/app/dashboard" className="min-w-0">
+            <AppLogo logoClassName="h-9 sm:h-10" />
+          </Link>
+          <div className="relative hidden max-w-md flex-1 md:block">
+            <Search className="pointer-events-none absolute left-4 top-1/2 size-4 -translate-y-1/2 text-slate-400" />
+            <Input className="bg-white pl-10" placeholder="Search current workspace context" />
+          </div>
         </div>
         <div className="ml-auto flex flex-wrap items-center gap-3">
           <Badge tone="info">System healthy</Badge>

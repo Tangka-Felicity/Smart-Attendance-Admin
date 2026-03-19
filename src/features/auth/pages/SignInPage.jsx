@@ -71,8 +71,8 @@ export function SignInPage() {
 
   return (
     <AuthFormShell
-      title="Sign in to the admin workspace"
-      description="Use a documented admin account to access organizations, departments, users, sessions, attendance, and reports."
+      title="Sign in to rollog"
+      description="Use a documented admin account to access rollog organizations, departments, users, sessions, attendance, and reports."
       footer={
         <>
           Need a new organization workspace?{' '}
@@ -141,10 +141,10 @@ export function SignInPage() {
           <button
             type="button"
             className="w-full rounded-2xl border border-blue-100 bg-white px-4 py-3 text-left transition hover:border-blue-300"
-            onClick={() => fillDemo('mia.reynolds@smartattendance.test', 'Admin123!', 'email')}
+            onClick={() => fillDemo('mia.reynolds@rollog.test', 'Admin123!', 'email')}
           >
             <p className="font-semibold text-brand-text">Super admin</p>
-            <p className="mt-1 text-sm text-brand-muted">mia.reynolds@smartattendance.test</p>
+            <p className="mt-1 text-sm text-brand-muted">mia.reynolds@rollog.test</p>
           </button>
           <button
             type="button"

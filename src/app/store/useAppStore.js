@@ -5,6 +5,36 @@ import { initialPrototypeState } from './mockData'
 import { getAccessibleOrganizations, getCurrentUser, normalizePhone } from './selectors'
 
 const DEMO_CODE = '482913'
+const PERSISTENCE_KEY = 'rollog-prototype'
+const LEGACY_PERSISTENCE_KEY = 'smart-attendance-prototype'
+
+function createAppStorage() {
+  return {
+    getItem: (name) => {
+      const currentValue = localStorage.getItem(name)
+
+      if (currentValue || name !== PERSISTENCE_KEY) {
+        return currentValue
+      }
+
+      return localStorage.getItem(LEGACY_PERSISTENCE_KEY)
+    },
+    setItem: (name, value) => {
+      localStorage.setItem(name, value)
+
+      if (name === PERSISTENCE_KEY && localStorage.getItem(LEGACY_PERSISTENCE_KEY)) {
+        localStorage.removeItem(LEGACY_PERSISTENCE_KEY)
+      }
+    },
+    removeItem: (name) => {
+      localStorage.removeItem(name)
+
+      if (name === PERSISTENCE_KEY) {
+        localStorage.removeItem(LEGACY_PERSISTENCE_KEY)
+      }
+    },
+  }
+}
 
 function cloneInitialState() {
   return JSON.parse(JSON.stringify(initialPrototypeState))
@@ -621,8 +651,8 @@ export const useAppStore = create(
       },
     }),
     {
-      name: 'smart-attendance-prototype',
-      storage: createJSONStorage(() => localStorage),
+      name: PERSISTENCE_KEY,
+      storage: createJSONStorage(createAppStorage),
       version: 1,
     },
   ),

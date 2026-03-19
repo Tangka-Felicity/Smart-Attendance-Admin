@@ -10,7 +10,7 @@ export function NotFoundPage() {
         <p className="text-caption">404</p>
         <h1 className="mt-3 text-headline">That page is outside the documented flow</h1>
         <p className="mt-4 text-body">
-          Return to sign in or the dashboard to continue through the Smart Attendance admin journey.
+          Return to sign in or the dashboard to continue through the rollog admin journey.
         </p>
         <div className="mt-6 flex justify-center gap-3">
           <Link to="/sign-in">

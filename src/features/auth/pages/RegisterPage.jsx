@@ -52,8 +52,8 @@ export function RegisterPage() {
 
   return (
     <AuthFormShell
-      title="Create your attendance workspace"
-      description="Register an organization and primary organization admin account before adding departments, users, sessions, and attendance activity."
+      title="Create your rollog workspace"
+      description="Register an organization and primary organization admin account in rollog before adding departments, users, sessions, and attendance activity."
       footer={
         <>
           Already have access?{' '}

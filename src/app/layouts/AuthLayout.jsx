@@ -19,7 +19,7 @@ export function AuthLayout() {
             <div className="relative flex h-full flex-col justify-between">
               <AppLogo />
               <div className="max-w-xl">
-                <p className="text-caption">Smart Attendance System</p>
+                <p className="text-caption">rollog</p>
                 <h1 className="mt-4 text-display">
                   Admin attendance flows built around organizations, departments, sessions, and live monitoring.
                 </h1>

@@ -1,13 +1,22 @@
-export function AppLogo() {
+import rollogMainTransparent from '../../assets/logo/rollog-main-transparent.svg'
+import { cn } from '../../lib/utils'
+
+export function AppLogo({ className, logoClassName, textClassName }) {
   return (
-    <div className="flex items-center gap-3">
-      <div className="flex size-11 items-center justify-center rounded-2xl bg-linear-to-br from-brand-primary to-brand-accent text-lg font-bold text-white shadow-soft">
-        SA
-      </div>
-      <div>
-        <p className="text-sm font-semibold text-brand-text">Smart Attendance</p>
-        <p className="text-xs text-brand-muted">Admin workspace</p>
-      </div>
+    <div className={cn('flex max-w-full flex-wrap items-center gap-x-3 gap-y-1', className)}>
+      <img
+        src={rollogMainTransparent}
+        alt="rollog"
+        className={cn('h-11 w-auto shrink-0 object-contain sm:h-12', logoClassName)}
+      />
+      <span
+        className={cn(
+          'whitespace-nowrap text-sm font-semibold tracking-tight text-brand-text sm:text-lg',
+          textClassName,
+        )}
+      >
+        Smart Attendance
+      </span>
     </div>
   )
 }
